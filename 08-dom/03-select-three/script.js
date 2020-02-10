@@ -10,5 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  Array.from(document.querySelectorAll("target").forEach(element => {
+    element.innerHTML = "Oowneeed";
+  })
 })();
