@@ -12,7 +12,10 @@
 (() => {
   const today = new Date();
 
-  if (today.getHours() >= 0 && today.getHours() < 17.5) {
+  if (
+    (today.getHours() >= 0 && today.getHours() < 17) ||
+    (today.getMinutes() <= 30 && today.getMinutes() > 30)
+  ) {
     document.getElementById("target").innerHTML = "Bonjour !";
   } else {
     document.getElementById("target").innerHTML = "Bonsoir !";

@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-  Array.from(document.querySelectorAll("target").forEach(element => {
-    element.innerHTML = "Oowneeed";
-  })
+  Array.from(
+    document.querySelectorAll("target").forEach(element => {
+      element.innerHTML = "Oowneeed";
+    })
+  );
 })();
